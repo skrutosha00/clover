@@ -1,0 +1,136 @@
+body {
+  background-image: url("../png/back_slots.png");
+  display: flex;
+}
+
+body > div {
+  margin-top: 30px;
+}
+
+.menu {
+  width: 320px;
+  margin-left: 20px;
+}
+
+.slot_cont {
+  display: flex;
+}
+
+.slot_cont img {
+  margin: 7.5px 12.5px 7.5px;
+  width: 75px;
+  height: 75px;
+}
+
+.slot {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 270px;
+  background: linear-gradient(
+    90deg,
+    #000000 -4.09%,
+    #0c8900 50.97%,
+    #000000 100.55%
+  );
+  border: 5px solid #038700;
+}
+
+.slot_pics {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+
+  position: absolute;
+  top: 0;
+
+  transition: top 4s ease;
+}
+
+.button {
+  border-radius: 7px;
+  width: 40%;
+  height: 50px;
+}
+
+.header.second {
+  margin: 100px auto 30px;
+}
+
+.bet_button {
+  background: linear-gradient(180deg, #f1dd2c 0%, #c96822 100%);
+}
+
+.bet_button:active {
+  background: #f8e113;
+}
+
+.auto {
+  transition: background-color 1s ease;
+  border-radius: 7px;
+  background-color: #2233c9;
+}
+
+.auto.active {
+  background-color: #f12cdd;
+}
+
+.black {
+  width: 320px;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plus,
+.minus {
+  width: 56px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid white;
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.warning {
+  position: absolute;
+  z-index: 2;
+  left: -50%;
+  top: 25%;
+  transition: left ease 0.5s;
+
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(180deg, #303030 0%, #292929 100%);
+  border-radius: 12px;
+
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.warning .button {
+  margin: 20px auto;
+  background: linear-gradient(180deg, #3df12c 0%, #30c922 100%);
+  border-radius: 12px;
+  width: 65%;
+  height: 59px;
+  line-height: 59px;
+}
+
+.warning .button:active {
+  background: #15ff00;
+}
+
+.lepr {
+  position: absolute;
+  z-index: 5;
+  top: 20%;
+  right: 1%;
+
+  width: 120px;
+  height: 120px;
+}

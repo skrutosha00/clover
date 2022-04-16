@@ -1,0 +1,67 @@
+body {
+  background-image: url("../png/back_main.png");
+}
+
+.balance_field {
+  margin: 15px auto;
+}
+
+.modes {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.mode {
+  position: relative;
+  border: 10px solid #f1dd2c;
+  border-radius: 32px;
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+}
+
+.mode .logo {
+  width: 120px;
+  height: 120px;
+}
+
+.first {
+  background-image: url("../png/main_first.png");
+}
+
+.bomb {
+  position: absolute;
+  top: -50px;
+  left: -30px;
+
+  transform: rotate(15deg);
+  width: 90px;
+  height: 90px;
+}
+
+.second {
+  background-image: url("../png/main_second.png");
+}
+
+.beer {
+  position: absolute;
+  top: 140px;
+  left: 150px;
+
+  transform: rotate(10deg);
+  width: 110px;
+  height: 110px;
+}
+
+.go.button {
+  position: absolute;
+  top: 180px;
+  left: 50px;
+}

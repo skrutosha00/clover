@@ -1,0 +1,110 @@
+body {
+  background-image: url("../png/back_bomb.png");
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.field_cont {
+  width: 428px;
+  height: 322px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 22px;
+}
+
+.field {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.cell_cont {
+  position: relative;
+  width: 92px;
+  height: 67px;
+  margin-top: 10px;
+}
+
+.cell {
+  position: absolute;
+
+  background: linear-gradient(180deg, #303030 0%, #292929 100%);
+  border-radius: 12px;
+  width: 92px;
+  height: 67px;
+
+  transition: opacity 1s ease;
+}
+
+.cell_cont img {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+
+  transition: opacity 1s ease;
+}
+
+.menu {
+  margin-left: 30px;
+  width: 300px;
+  height: 308px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+
+.menu .bottom {
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.bomb_control .text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+.bombs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.black_button {
+  width: 56px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid white;
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.black_button.active {
+  background: rgba(201, 201, 201, 0.4);
+}
+
+.green {
+  width: 298px;
+  height: 59px;
+  background: linear-gradient(180deg, #3df12c 0%, #30c922 100%);
+  border-radius: 12px;
+}
+
+.green:active {
+  background: #15ff00;
+}

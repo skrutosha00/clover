@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "AndikaNewBasic";
+  src: url("../AndikaNewBasic.ttf");
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "AndikaNewBasic";
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+
+.go {
+  background: linear-gradient(#f1dd2c -6.76%, #c96822 87.46%) padding-box,
+    linear-gradient(300deg, #e36d00 -3.53%, #fcff5e 108.46%) border-box;
+  width: 90px;
+  height: 44px;
+  border: 3px solid transparent;
+  border-radius: 7px;
+}
+
+.go:active {
+  border: 3px solid yellow;
+}
+
+.balance_field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 208px;
+  height: 37px;
+
+  background: rgba(19, 19, 19, 0.9);
+  border-radius: 7px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.balance {
+  width: 60px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: linear-gradient(180deg, #f12c2c 0%, #c92222 100%);
+  border-radius: 7px;
+
+  width: 84px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+
+.home:active {
+  background: red;
+}
+
+.black {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+}
+
+.bet {
+  width: 45%;
+  text-align: center;
+}
