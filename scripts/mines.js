@@ -32,6 +32,13 @@ for (let i = 0; i < 4; i++) {
 generateField(0)
 
 
+setTimeout(() => {
+    animateCells()
+}, 1500);
+setInterval(() => {
+    animateCells()
+}, 7500)
+
 plus.onclick = () => {
     if (Number(bet.innerHTML) + 150 > Number(balance.innerHTML) || !active) { return }
     bet.innerHTML = Number(bet.innerHTML) + 150
@@ -98,6 +105,15 @@ function generateField(bombs) {
             }
         }
         field.appendChild(cellCont)
+    }
+}
+
+function animateCells() {
+    for (let cell of document.querySelectorAll('.cell')) {
+        cell.classList.add('anim')
+        setTimeout(() => {
+            cell.classList.remove('anim')
+        }, 1000);
     }
 }
 

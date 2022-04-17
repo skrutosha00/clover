@@ -36,6 +36,13 @@ let slotPicsNodes = document.querySelectorAll('.slot_pics')
 let warning = document.querySelector('.warning')
 let playAgain = document.querySelector('.warning .button')
 
+setTimeout(() => {
+    animateButtons()
+}, 1000);
+setInterval(() => {
+    animateButtons()
+}, 3500);
+
 plus.onclick = () => {
     if (Number(bet.innerHTML) + 150 > Number(balance.innerHTML) || !active || autoMode) { return }
     bet.innerHTML = Number(bet.innerHTML) + 150
@@ -144,6 +151,16 @@ function generatePics(slotPics, count, r, winSlot) {
         }
         slotPics.appendChild(slotPic)
     }
+}
+
+function animateButtons() {
+    if (!active || autoMode) { return }
+    betButton.classList.add('anim')
+    auto.classList.add('anim')
+    setTimeout(() => {
+        betButton.classList.remove('anim')
+        auto.classList.remove('anim')
+    }, 500);
 }
 
 function changeBalance(amount) {

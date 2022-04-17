@@ -30,6 +30,12 @@ body {
 .mode .logo {
   width: 120px;
   height: 120px;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.logo.big {
+  width: 140px;
+  height: 140px;
 }
 
 .first {
@@ -65,3 +71,4 @@ body {
   top: 180px;
   left: 50px;
 }
+

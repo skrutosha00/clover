@@ -59,6 +59,11 @@ body > div {
 
 .bet_button {
   background: linear-gradient(180deg, #f1dd2c 0%, #c96822 100%);
+  transition: box-shadow 0.5s ease;
+}
+
+.bet_button.anim {
+  box-shadow: 0 4px 15px 0 #f1dd2c;
 }
 
 .bet_button:active {
@@ -66,9 +71,13 @@ body > div {
 }
 
 .auto {
-  transition: background-color 1s ease;
   border-radius: 7px;
   background-color: #2233c9;
+  transition: box-shadow 0.5s ease, background-color 1s ease;
+}
+
+.auto.anim {
+  box-shadow: 0 4px 15px 0 #0f22c5;
 }
 
 .auto.active {

@@ -36,10 +36,15 @@ a {
   height: 44px;
   border: 3px solid transparent;
   border-radius: 7px;
+  transition: box-shadow 0.5s ease;
 }
 
 .go:active {
   border: 3px solid yellow;
+}
+
+.go.anim {
+  box-shadow: 0 4px 15px 0 #f1dd2c;
 }
 
 .balance_field {
