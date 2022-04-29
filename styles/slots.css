@@ -1,10 +1,21 @@
 body {
   background-image: url("../png/back_slots.png");
-  display: flex;
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
 }
 
 body > div {
-  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.wrapper {
+  display: flex;
+  overflow-y: hidden;
+  position: relative;
+
+  width: calc(100% - 10px);
+  margin: auto;
 }
 
 .menu {
@@ -106,7 +117,7 @@ body > div {
 
 .warning {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   left: -50%;
   top: 25%;
   transition: left ease 0.5s;
@@ -138,7 +149,7 @@ body > div {
   position: absolute;
   z-index: 5;
   top: 20%;
-  right: 1%;
+  left: 650px;
 
   width: 120px;
   height: 120px;

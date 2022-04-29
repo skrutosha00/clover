@@ -1,7 +1,22 @@
 body {
   background-image: url("../png/back_bomb.png");
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+}
+
+body > div {
+  padding-top: 30px;
+}
+
+.wrapper {
   display: flex;
+  overflow-y: hidden;
+  position: relative;
   align-items: center;
+
+  width: calc(100% - 10px);
+  margin: auto;
 }
 
 .hidden {
@@ -9,7 +24,7 @@ body {
 }
 
 .field_cont {
-  width: 428px;
+  min-width: 428px;
   height: 322px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 22px;
